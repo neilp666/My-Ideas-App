@@ -1,6 +1,8 @@
 == README
 
-This is an ideas app - Allows anyone to create , save , edit & delete ideas and upload a picture as well. 
+This is an ideas app - Allows anyone to login 
+
+& create , save , edit, delete ideas and upload a picture as well. 
 
 
 * Ruby version 2.0

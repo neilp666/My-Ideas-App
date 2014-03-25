@@ -1,4 +1,5 @@
 Ideas::Application.routes.draw do
+  devise_for :users
   get "pages/info"
   resources :ideas
 
