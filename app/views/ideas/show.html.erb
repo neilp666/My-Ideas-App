@@ -5,6 +5,16 @@
 		<%= image_tag(@idea.picture_url, :Width => "100%") if @idea.picture.present? %>
 	</div>
 
+	<h3>Comments</h3>
+	<% @idea.comments.each do |comment| %>
+		<div>
+			<strong><%= comment.user_name %></strong>
+			<br />
+			<p><%= comment.body %></p>
+		</div>
+	<% end %>
+	<%= render 'comments/form' %>
+
 	<div class="span3">
 		<p><b>Name: </b><%= @idea.name %></p>
 		<p><b>Description: </b><%= @idea.description %></p>
